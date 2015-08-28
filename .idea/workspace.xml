@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a8ef14e-ed25-489e-9b77-550e34923db3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/klass.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/teacher-spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/teacher.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/worker-spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/worker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/student.js" afterPath="$PROJECT_DIR$/src/student.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/students-spec.js" afterPath="$PROJECT_DIR$/spec/students-spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="4a8ef14e-ed25-489e-9b77-550e34923db3" name="Default" comment="" />
     <ignored path="oo-step-by-step.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
