@@ -3,8 +3,8 @@
 var Person = require('./person.js');
 var Klass = require('./klass.js');
 
-function Student(name ,age, klass) {
-    Person.call(this, name, age);
+function Student(id, name ,age, klass) {
+    Person.call(this, id, name, age);
     this.klass = klass;
 }
 

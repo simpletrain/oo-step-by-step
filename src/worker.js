@@ -2,8 +2,8 @@
 
 var Person = require('./person.js');
 
-function Worker(name ,age) {
-    Person.call(this, name, age);
+function Worker(id, name ,age) {
+    Person.call(this, id, name, age);
 }
 
 Worker.prototype = Object.create(Person.prototype);
