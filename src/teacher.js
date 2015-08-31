@@ -21,7 +21,7 @@ Teacher.prototype.introduce = function(){
 };
 
 Teacher.prototype.introduceWith = function(student){
-    if(student.klass.number === this.klass){
+    if(student.klass.number === this.klass.number){
         return (this.super_introduce() +  'I am a Teacher. I teach ' + student.name);
     } else {
         return (this.super_introduce() +  "I am a Teacher.I don't teach " + student.name);

@@ -2,6 +2,7 @@
 
 var Person = require('../src/person.js');
 var Student = require('../src/student.js');
+var Klass = require('../src/klass.js');
 
 describe('Student', function () {
 
@@ -11,7 +12,8 @@ describe('Student', function () {
     });
 
     it('should has name,age properties', function () {
-        var student = new Student('Tom', 21 ,2);
+        var klass = new Klass(2);
+        var student = new Student('Tom', 21 ,klass);
         expect(student.name).toBe('Tom');
         expect(student.age).toBe(21);
         expect(student.klass.number).toBe(2);
@@ -19,12 +21,20 @@ describe('Student', function () {
 
     describe('#introduce', function () {
 
-        it('should print right introduce', function () {
-            var student = new Student('Tom', 21, 2);
+        it('should print right introduce when it is not leader', function () {
+            var klass = new Klass(2);
+            var student = new Student('Tom', 21, klass);
             var introduce = student.introduce();
-            expect(introduce).toBe('My name is Tom. I am 21 years old.I am a Student. I am at Class 2.');
+            expect(introduce).toBe('My name is Tom. I am 21 years old.I am a Student.I am at Class 2.');
         });
 
+        it('should print right introduce when it is leader', function () {
+            var klass = new Klass(2);
+            var student = new Student('Tom', 21, klass);
+            klass.assignLeader(student);
+            var introduce = student.introduce();
+            expect(introduce).toBe('My name is Tom. I am 21 years old.I am a Student.I am Leader of Class 2.');
+        });
     });
 
 });
